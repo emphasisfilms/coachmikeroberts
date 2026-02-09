@@ -1,0 +1,196 @@
+.hero {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 24px;
+}
+
+.heroLogo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+.heroQuote {
+  font-size: 1.25rem;
+  font-style: italic;
+  max-width: 600px;
+  margin: 0 auto 8px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.heroAttribution {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.featured {
+  padding: 64px 0;
+}
+
+.featuredInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.featuredGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.featuredCard {
+  background-color: var(--color-card-bg);
+  border-radius: 12px;
+  padding: 32px;
+  transition: transform 0.2s;
+}
+
+.featuredCard:hover {
+  transform: translateY(-2px);
+}
+
+.featuredCardLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-accent);
+  margin-bottom: 8px;
+}
+
+.featuredCardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.featuredCardText {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.featuredCardLink {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  transition: opacity 0.2s;
+}
+
+.featuredCardLink:hover {
+  opacity: 0.7;
+}
+
+.welcome {
+  padding: 80px 0;
+  background-color: #fafafa;
+}
+
+.welcomeInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.welcomeContent h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.welcomeContent p {
+  font-size: 1rem;
+  color: var(--color-muted);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.welcomeImage {
+  background-color: var(--color-card-bg);
+  border-radius: 12px;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.philosophy {
+  padding: 80px 0;
+}
+
+.philosophyInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.philosophyInner h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 40px;
+}
+
+.philosophyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.philosophyItem {
+  padding: 32px 24px;
+}
+
+.philosophyItem h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--color-accent);
+}
+
+.philosophyItem p {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 48px 24px;
+  }
+
+  .heroLogo {
+    font-size: 1.75rem;
+  }
+
+  .heroQuote {
+    font-size: 1.05rem;
+  }
+
+  .featuredGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcomeInner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .philosophyGrid {
+    grid-template-columns: 1fr;
+  }
+}

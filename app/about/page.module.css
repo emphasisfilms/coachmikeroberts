@@ -1,0 +1,217 @@
+.hero {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  padding: 64px 24px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.bio {
+  padding: 80px 0;
+}
+
+.bioInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.bioImage {
+  background-color: var(--color-card-bg);
+  border-radius: 12px;
+  aspect-ratio: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  position: sticky;
+  top: calc(var(--header-height) + 24px);
+}
+
+.bioContent h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.bioContent p {
+  font-size: 1rem;
+  color: var(--color-muted);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.highlights {
+  padding: 80px 0;
+  background-color: #fafafa;
+}
+
+.highlightsInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.highlightsInner h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 40px;
+}
+
+.highlightsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.highlightCard {
+  background-color: var(--color-bg);
+  border-radius: 12px;
+  padding: 32px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.highlightNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 4px;
+}
+
+.highlightLabel {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.books {
+  padding: 80px 0;
+}
+
+.booksInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.booksInner h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.booksList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.bookCard {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  background-color: var(--color-card-bg);
+  border-radius: 12px;
+  padding: 24px;
+  align-items: start;
+}
+
+.bookCover {
+  background-color: var(--color-accent);
+  border-radius: 8px;
+  aspect-ratio: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.bookInfo h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.bookInfo .bookYear {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-bottom: 12px;
+}
+
+.bookInfo p {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.bookCta {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  transition: opacity 0.2s;
+}
+
+.bookCta:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .bioInner {
+    grid-template-columns: 1fr;
+  }
+
+  .bioImage {
+    position: static;
+    aspect-ratio: 4/3;
+  }
+
+  .highlightsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .booksList {
+    grid-template-columns: 1fr;
+  }
+
+  .bookCard {
+    grid-template-columns: 120px 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .bookCard {
+    grid-template-columns: 1fr;
+  }
+}
