@@ -19,13 +19,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <>
-      <div className={styles.topBanner}>
-        <a href="https://vimeo.com/182472081" target="_blank" rel="noopener noreferrer">
-          Listen to my Conversation with the American Baseball Coaches Association Podcast
-        </a>
-      </div>
-      <header className={styles.header}>
+    <header className={styles.header}>
         <div className={styles.headerInner}>
         <Link href="/" className={styles.logo}>
           <Image
@@ -74,6 +68,5 @@ export default function Header() {
         </nav>
       </div>
     </header>
-    </>
   )
 }

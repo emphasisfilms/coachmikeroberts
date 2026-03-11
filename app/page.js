@@ -103,6 +103,43 @@ export default function Home() {
                 Buy on Amazon &rarr;
               </a>
             </div>
+            <div className={styles.featuredCard}>
+              <p className={styles.featuredCardLabel}>Podcast</p>
+              <h3 className={styles.featuredCardTitle}>ABCA Podcast Interview</h3>
+              <p className={styles.featuredCardText}>
+                Listen to my conversation with the American Baseball Coaches Association.
+              </p>
+              <a
+                href="https://vimeo.com/182472081"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.featuredCardLink}
+              >
+                Listen Now &rarr;
+              </a>
+            </div>
+            <div className={styles.featuredCard}>
+              <Image
+                src="/images/baserunning-cover.jpg"
+                alt="Baserunning — book cover"
+                width={250}
+                height={284}
+                className={styles.featuredCardImage}
+              />
+              <p className={styles.featuredCardLabel}>Interview</p>
+              <h3 className={styles.featuredCardTitle}>John Madden on Baserunning</h3>
+              <p className={styles.featuredCardText}>
+                Interview with John Madden about my book, Baserunning.
+              </p>
+              <a
+                href="http://www.youtube.com/watch?v=QfZGtw71yhk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.featuredCardLink}
+              >
+                Watch Interview &rarr;
+              </a>
+            </div>
           </div>
         </div>
       </section>
