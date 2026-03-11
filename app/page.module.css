@@ -117,14 +117,64 @@
 }
 
 .welcomeImage {
-  background-color: var(--color-card-bg);
-  border-radius: 12px;
-  aspect-ratio: 4/3;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-muted);
-  font-size: 0.9rem;
+}
+
+.welcomeImage img {
+  max-width: 100%;
+  height: auto;
+}
+
+.trainingVideo {
+  padding: 80px 0;
+  background-color: var(--color-bg);
+  text-align: center;
+}
+
+.trainingVideoInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.trainingVideoInner h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 32px;
+}
+
+.videoEmbed {
+  position: relative;
+  padding-bottom: 56.25%;
+  max-width: 720px;
+  margin: 0 auto 32px;
+}
+
+.videoEmbed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.trainingCta {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 16px 40px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.trainingCta:hover {
+  background-color: var(--color-accent-hover);
 }
 
 .philosophy {

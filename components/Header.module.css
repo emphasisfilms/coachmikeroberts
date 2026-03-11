@@ -1,3 +1,22 @@
+.topBanner {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 24px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.topBanner a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.topBanner a:hover {
+  opacity: 0.85;
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -18,15 +37,13 @@
 }
 
 .logo {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--color-accent);
-  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
 }
 
-.logo span {
-  font-weight: 400;
-  color: var(--color-muted);
+.logo img {
+  height: 55px;
+  width: auto;
 }
 
 .nav {

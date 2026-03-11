@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import Link from 'next/link'
+import RotatingQuotes from '@/components/RotatingQuotes'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -6,10 +8,7 @@ export default function Home() {
     <>
       <section className={styles.hero}>
         <h1 className={styles.heroLogo}>Coach Mike Roberts</h1>
-        <p className={styles.heroQuote}>
-          &ldquo;People don&rsquo;t care how much you know until they know how much you care.&rdquo;
-        </p>
-        <p className={styles.heroAttribution}>&mdash; Theodore Roosevelt</p>
+        <RotatingQuotes />
       </section>
 
       <section className={styles.featured}>
@@ -51,26 +50,70 @@ export default function Home() {
       <section className={styles.welcome}>
         <div className={styles.welcomeInner}>
           <div className={styles.welcomeContent}>
-            <h2>Welcome</h2>
+            <h2>Welcome!</h2>
             <p>
-              Coach Mike Roberts served as the head baseball coach at the University of North
-              Carolina at Chapel Hill for 23 seasons, compiling 780 wins and leading the Tar Heels
-              to numerous ACC championships and College World Series appearances.
+              I am the former baseball coach at the University of North Carolina at Chapel Hill
+              and UNC-Asheville, and current head coach of the Cotuit Kettleers in the Cape Cod
+              Collegiate Summer Baseball League the past 10 seasons. My son, Brian, has played
+              for the Baltimore Orioles the past 12 seasons and is a 2 time MLB All Star. I have
+              authored two books (<em>You Can&rsquo;t Steal Second Base and Keep Your Foot on
+              1st</em>, 2008 and <em>Baserunning</em>, 2013) and provide instructional videos,
+              all available in my store below.
             </p>
             <p>
-              A respected voice in baseball coaching, Coach Roberts is dedicated to teaching the
-              fundamentals of the game and helping players develop not only as athletes, but as
-              individuals. His coaching philosophy centers on discipline, preparation, and a genuine
-              care for each player&rsquo;s growth.
+              I am an old fashioned &ldquo;Playground or Backyard&rdquo; style coach. Some people
+              ask me what that means: players must have fun practicing and playing the game as if
+              participating in a game of Wiffle Ball in the yard, and practice fundamentals,
+              fundamentals, fundamentals! Baseball players should learn to practice baseball
+              fundamentals on their own. Team practices will never provide individuals enough
+              attention and work to truly polish their skills.
             </p>
             <p>
-              He is the father of Brian Roberts, a two-time MLB All-Star who played 14 seasons with
-              the Baltimore Orioles.
+              Self-Motivation is critical for improvement in any area of life. A baseball player,
+              no matter what age, must have a desire to polish personal skills through practice
+              and should spend at least twice as many hours practicing as playing games.
+            </p>
+            <p>
+              Follow the{' '}
+              <a href="https://www.capecodleague.com/cotuit" target="_blank" rel="noopener noreferrer">
+                Cotuit Kettleers
+              </a>{' '}
+              for the latest news and updates.
             </p>
           </div>
           <div className={styles.welcomeImage}>
-            Coach Roberts Photo
+            <Image
+              src="/images/coach-roberts.png"
+              alt="Coach Mike Roberts"
+              width={350}
+              height={350}
+            />
           </div>
+        </div>
+      </section>
+
+      <section className={styles.trainingVideo}>
+        <div className={styles.trainingVideoInner}>
+          <h2>Watch Training Videos Now</h2>
+          <div className={styles.videoEmbed}>
+            <iframe
+              src="https://player.vimeo.com/video/167310017"
+              width="640"
+              height="360"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              title="Fundamentals of Baseball Trailer"
+            />
+          </div>
+          <a
+            href="https://vimeo.com/ondemand/fundamentalsofbaseball"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.trainingCta}
+          >
+            Watch the Full Training Series on Vimeo
+          </a>
         </div>
       </section>
 

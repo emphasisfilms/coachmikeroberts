@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
@@ -18,10 +19,22 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className={styles.header}>
-      <div className={styles.headerInner}>
+    <>
+      <div className={styles.topBanner}>
+        <a href="https://vimeo.com/182472081" target="_blank" rel="noopener noreferrer">
+          Listen to my Conversation with the American Baseball Coaches Association Podcast
+        </a>
+      </div>
+      <header className={styles.header}>
+        <div className={styles.headerInner}>
         <Link href="/" className={styles.logo}>
-          Coach Mike Roberts
+          <Image
+            src="/images/logo.png"
+            alt="Coach Mike Roberts"
+            width={150}
+            height={80}
+            priority
+          />
         </Link>
 
         <button
@@ -48,5 +61,6 @@ export default function Header() {
         </nav>
       </div>
     </header>
+    </>
   )
 }
