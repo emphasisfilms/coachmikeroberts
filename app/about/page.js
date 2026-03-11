@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import FeaturedCards from '@/components/FeaturedCards'
 import RotatingQuotes from '@/components/RotatingQuotes'
 import styles from './page.module.css'
 
@@ -101,6 +102,8 @@ export default function About() {
           </p>
         </div>
       </section>
+
+      <FeaturedCards />
 
       <section className={styles.quotes}>
         <RotatingQuotes />
