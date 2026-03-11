@@ -141,6 +141,13 @@ export default function Coaching() {
           <h2>Cotuit Kettleers</h2>
           <p className={styles.postMeta}>Story by Steve McCarthy, August 13, 2010</p>
 
+          <Image
+            src="/images/kettleers-slide.jpg"
+            alt="Kettleers player sliding into base"
+            width={800}
+            height={600}
+            className={styles.postImage}
+          />
           <p>
             SOUTH YARMOUTH - Based on the attendance figures from Friday&rsquo;s deciding Game 3
             of the Cape Cod Baseball League Championship Series, it&rsquo;s pretty certain everyone
