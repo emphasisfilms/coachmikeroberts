@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <>
       <section className={styles.hero}>
-        <h1 className={styles.heroLogo}>Coach Mike Roberts</h1>
         <RotatingQuotes />
       </section>
 
@@ -15,6 +14,13 @@ export default function Home() {
         <div className={styles.featuredInner}>
           <div className={styles.featuredGrid}>
             <div className={styles.featuredCard}>
+              <Image
+                src="/images/training-hero.jpg"
+                alt="Fundamentals of Baseball training"
+                width={960}
+                height={540}
+                className={styles.featuredCardImage}
+              />
               <p className={styles.featuredCardLabel}>Training Videos</p>
               <h3 className={styles.featuredCardTitle}>Fundamentals of Baseball</h3>
               <p className={styles.featuredCardText}>
@@ -31,6 +37,13 @@ export default function Home() {
               </a>
             </div>
             <div className={styles.featuredCard}>
+              <Image
+                src="/images/book-cover.png"
+                alt="You Can't Steal Second Base and Keep Your Foot on First — book cover"
+                width={250}
+                height={284}
+                className={styles.featuredCardImage}
+              />
               <p className={styles.featuredCardLabel}>Book</p>
               <h3 className={styles.featuredCardTitle}>
                 You Can&rsquo;t Steal Second Base and Keep Your Foot on First
@@ -39,9 +52,14 @@ export default function Home() {
                 Coach Roberts&rsquo; guide to baseball fundamentals, life lessons, and the coaching
                 philosophy that built championship programs.
               </p>
-              <Link href="/about#books" className={styles.featuredCardLink}>
-                Learn More &rarr;
-              </Link>
+              <a
+                href="https://www.amazon.com/Cant-Steal-Second-Base-First/dp/B003BJMEVK"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.featuredCardLink}
+              >
+                Buy on Amazon &rarr;
+              </a>
             </div>
           </div>
         </div>
@@ -73,13 +91,14 @@ export default function Home() {
               no matter what age, must have a desire to polish personal skills through practice
               and should spend at least twice as many hours practicing as playing games.
             </p>
-            <p>
-              Follow the{' '}
-              <a href="https://www.capecodleague.com/cotuit" target="_blank" rel="noopener noreferrer">
-                Cotuit Kettleers
-              </a>{' '}
-              for the latest news and updates.
-            </p>
+            <a
+              href="https://www.capecodleague.com/cotuit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.welcomeButton}
+            >
+              Follow the Cotuit Kettleers
+            </a>
           </div>
           <div className={styles.welcomeImage}>
             <Image

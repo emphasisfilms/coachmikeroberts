@@ -53,6 +53,13 @@
   transform: translateY(-2px);
 }
 
+.featuredCardImage {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
 .featuredCardLabel {
   font-size: 0.8rem;
   font-weight: 600;
@@ -114,6 +121,22 @@
   color: var(--color-muted);
   line-height: 1.7;
   margin-bottom: 16px;
+}
+
+.welcomeButton {
+  display: inline-block;
+  margin-top: 8px;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.welcomeButton:hover {
+  background-color: var(--color-accent-hover);
 }
 
 .welcomeImage {
