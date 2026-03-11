@@ -14,7 +14,7 @@ export default function Contact() {
 
       <section className={styles.content}>
         <div className={styles.contentInner}>
-          <form className={styles.form}>
+          <form className={styles.form} action="https://formspree.io/f/mpqydkqk" method="POST">
             <div className={styles.formGroup}>
               <label htmlFor="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your name" required />
