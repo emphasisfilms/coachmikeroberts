@@ -1,185 +1,130 @@
 .hero {
   background-color: var(--color-accent);
   color: #ffffff;
-  padding: 64px 24px;
+  padding: 40px 24px;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 12px;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  opacity: 0.85;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
   max-width: 600px;
   margin: 0 auto;
 }
 
+.sectionInner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 .vimeoSection {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
-.vimeoInner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 24px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: center;
-}
-
-.vimeoContent h2 {
-  font-size: 2rem;
+.vimeoSection h2 {
+  font-size: 1.75rem;
   font-weight: 700;
-  color: var(--color-accent);
-  margin-bottom: 16px;
-}
-
-.vimeoContent p {
-  font-size: 1rem;
-  color: var(--color-muted);
-  line-height: 1.7;
-  margin-bottom: 16px;
-}
-
-.vimeoCta {
-  display: inline-block;
-  background-color: var(--color-accent);
-  color: #ffffff;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: background-color 0.2s;
-  margin-top: 8px;
-}
-
-.vimeoCta:hover {
-  background-color: var(--color-accent-hover);
-}
-
-.vimeoEmbed {
-  background-color: var(--color-card-bg);
-  border-radius: 12px;
-  aspect-ratio: 16/9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.vimeoEmbed iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 12px;
-}
-
-.philosophySection {
-  padding: 80px 0;
-  background-color: #fafafa;
-}
-
-.philosophyInner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-.philosophyInner h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--color-accent);
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.philosophyGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-}
-
-.philosophyCard {
-  background-color: var(--color-bg);
-  border-radius: 12px;
-  padding: 32px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-}
-
-.philosophyCard h3 {
-  font-size: 1.15rem;
-  font-weight: 600;
   color: var(--color-accent);
   margin-bottom: 12px;
 }
 
-.philosophyCard p {
-  font-size: 0.95rem;
+.vimeoSection p {
+  font-size: 1rem;
   color: var(--color-muted);
-  line-height: 1.6;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
-.topics {
-  padding: 80px 0;
+.videoEmbed {
+  position: relative;
+  padding-bottom: 56.25%;
+  margin-bottom: 32px;
 }
 
-.topicsInner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 24px;
+.videoEmbed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+.cta {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.cta:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.quotes {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  padding: 24px 24px;
   text-align: center;
 }
 
-.topicsInner h2 {
-  font-size: 2rem;
+.bookSection {
+  padding: 60px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.bookCard {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.bookImage {
+  width: 200px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.bookInfo h2 {
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-accent);
-  margin-bottom: 40px;
+  margin-bottom: 4px;
 }
 
-.topicsList {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.topicItem {
-  background-color: var(--color-card-bg);
-  border-radius: 12px;
-  padding: 28px 24px;
-}
-
-.topicItem h3 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.topicItem p {
+.bookYear {
   font-size: 0.9rem;
   color: var(--color-muted);
-  line-height: 1.5;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.bookInfo p {
+  font-size: 1rem;
+  color: var(--color-muted);
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
   }
 
-  .vimeoInner {
+  .bookCard {
     grid-template-columns: 1fr;
+    text-align: center;
   }
 
-  .philosophyGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .topicsList {
-    grid-template-columns: 1fr;
+  .bookImage {
+    margin: 0 auto;
   }
 }
