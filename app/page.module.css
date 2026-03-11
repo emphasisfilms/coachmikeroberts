@@ -54,10 +54,8 @@
 }
 
 .featuredCardImage {
-  width: auto;
+  width: 100%;
   height: auto;
-  max-height: 200px;
-  object-fit: none;
   margin: 0 auto 16px;
   border-radius: 4px;
 }
