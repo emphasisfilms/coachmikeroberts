@@ -1,3 +1,4 @@
+import ContactForm from './ContactForm'
 import styles from './page.module.css'
 
 export const metadata = {
@@ -14,33 +15,7 @@ export default function Contact() {
 
       <section className={styles.content}>
         <div className={styles.contentInner}>
-          <form className={styles.form} action="https://formspree.io/f/mpqydkqk" method="POST">
-            <div className={styles.formGroup}>
-              <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name" required />
-            </div>
-            <div className={styles.formGroup}>
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="your@email.com" required />
-            </div>
-            <div className={styles.formGroup}>
-              <label htmlFor="subject">Subject</label>
-              <select id="subject" name="subject" required>
-                <option value="General">General</option>
-                <option value="Speaking Request">Speaking Request</option>
-                <option value="Upcoming Event">Upcoming Event</option>
-                <option value="Videos">Videos</option>
-                <option value="Personal Note">Personal Note</option>
-              </select>
-            </div>
-            <div className={styles.formGroup}>
-              <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" placeholder="Your message..." required />
-            </div>
-            <button type="submit" className={styles.submitButton}>
-              Send Message
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </section>
     </>
