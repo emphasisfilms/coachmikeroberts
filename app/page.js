@@ -113,7 +113,6 @@ export default function Home() {
 
       <section className={styles.trainingVideo}>
         <div className={styles.trainingVideoInner}>
-          <h2>Watch Training Videos Now</h2>
           <div className={styles.videoEmbed}>
             <iframe
               src="https://player.vimeo.com/video/167310017"
@@ -136,34 +135,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.philosophy}>
-        <div className={styles.philosophyInner}>
-          <h2>Coaching Philosophy</h2>
-          <div className={styles.philosophyGrid}>
-            <div className={styles.philosophyItem}>
-              <h3>Fundamentals First</h3>
-              <p>
-                Every great player is built on a foundation of fundamentals. Coach Roberts emphasizes
-                mastering the basics before advancing to complex strategies.
-              </p>
-            </div>
-            <div className={styles.philosophyItem}>
-              <h3>Self-Motivation</h3>
-              <p>
-                True improvement comes from within. Players are taught to take ownership of their
-                development and cultivate a personal drive to get better every day.
-              </p>
-            </div>
-            <div className={styles.philosophyItem}>
-              <h3>Playground Style</h3>
-              <p>
-                The &ldquo;Playground or Backyard&rdquo; approach encourages players to rediscover
-                the joy and creativity that made them fall in love with baseball.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   )
 }
