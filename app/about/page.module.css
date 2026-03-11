@@ -18,52 +18,54 @@
 }
 
 .bioInner {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 24px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 32px;
-  align-items: start;
 }
 
-.bioImage {
-  position: sticky;
-  top: calc(var(--header-height) + 24px);
-}
-
-.bioImage img {
-  width: 280px;
-  height: auto;
-  border-radius: 8px;
-}
-
-.bioContent p {
+.bioInner p {
   font-size: 1rem;
   color: var(--color-muted);
   line-height: 1.8;
   margin-bottom: 20px;
 }
 
+.bioImageFloat {
+  float: right;
+  width: 280px;
+  height: auto;
+  margin: 0 0 20px 28px;
+  border-radius: 8px;
+}
+
+.bookImageFloat {
+  float: left;
+  width: 180px;
+  height: auto;
+  margin: 4px 24px 16px 0;
+  border-radius: 4px;
+}
+
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
   }
 
   .bio {
     padding: 40px 0;
   }
 
-  .bioInner {
-    grid-template-columns: 1fr;
-  }
-
-  .bioImage {
-    position: static;
-    text-align: center;
-  }
-
-  .bioImage img {
+  .bioImageFloat {
+    float: none;
+    display: block;
     width: 250px;
+    margin: 0 auto 24px;
+  }
+
+  .bookImageFloat {
+    float: none;
+    display: block;
+    width: 160px;
+    margin: 0 auto 20px;
   }
 }
