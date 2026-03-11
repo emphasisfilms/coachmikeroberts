@@ -12,7 +12,7 @@ export default function Coaching() {
   return (
     <>
       <section className={styles.hero}>
-        <h1>Coaching</h1>
+        <h1>Stories from the field and the coaches who shaped the game.</h1>
       </section>
 
       <article className={styles.post}>
