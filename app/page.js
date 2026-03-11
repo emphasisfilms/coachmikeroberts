@@ -6,10 +6,6 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <>
-      <section className={styles.hero}>
-        <RotatingQuotes />
-      </section>
-
       <section className={styles.featured}>
         <div className={styles.featuredInner}>
           <div className={styles.featuredGrid}>
@@ -24,7 +20,7 @@ export default function Home() {
               <p className={styles.featuredCardLabel}>Training Videos</p>
               <h3 className={styles.featuredCardTitle}>Fundamentals of Baseball</h3>
               <p className={styles.featuredCardText}>
-                Master the fundamentals with Coach Roberts&rsquo; comprehensive video training series
+                My comprehensive video training series covering the fundamentals of baseball,
                 available on Vimeo On Demand.
               </p>
               <a
@@ -49,7 +45,7 @@ export default function Home() {
                 You Can&rsquo;t Steal Second Base and Keep Your Foot on First
               </h3>
               <p className={styles.featuredCardText}>
-                Coach Roberts&rsquo; guide to baseball fundamentals, life lessons, and the coaching
+                My guide to baseball fundamentals, life lessons, and the coaching
                 philosophy that built championship programs.
               </p>
               <a
@@ -63,6 +59,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className={styles.hero}>
+        <RotatingQuotes />
       </section>
 
       <section className={styles.welcome}>

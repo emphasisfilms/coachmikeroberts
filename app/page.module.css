@@ -54,8 +54,9 @@
 }
 
 .featuredCardImage {
-  max-width: 200px;
-  height: auto;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   margin-bottom: 16px;
   border-radius: 4px;
 }
@@ -100,13 +101,13 @@
 }
 
 .welcomeInner {
-  max-width: var(--max-width);
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 24px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: start;
 }
 
 .welcomeContent h2 {
@@ -141,17 +142,18 @@
 
 .welcomeImage {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  margin-top: 8px;
 }
 
 .welcomeImage img {
-  max-width: 100%;
+  width: 250px;
   height: auto;
 }
 
 .trainingVideo {
-  padding: 80px 0;
+  padding: 24px 0 80px;
   background-color: var(--color-bg);
   text-align: center;
 }
