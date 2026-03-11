@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import RotatingQuotes from '@/components/RotatingQuotes'
 import styles from './page.module.css'
 
 export const metadata = {
@@ -98,6 +99,33 @@ export default function About() {
             and work enthusiastically to help young players improve. This interest and love of
             the game has fueled my passion for writing this book.
           </p>
+        </div>
+      </section>
+
+      <section className={styles.quotes}>
+        <RotatingQuotes />
+      </section>
+
+      <section className={styles.testimonial}>
+        <div className={styles.testimonialInner}>
+          <blockquote>
+            <p>
+              &ldquo;Before I had the privilege of playing for Coach Roberts, I felt that stealing
+              bases was simply about speed and reaction time, a mistake that many runners make.
+              Coach Roberts taught us that base stealers use not only their athletic gifts, but
+              their minds and systematic calculations to steal bases. As a runner converted into a
+              true base stealer, I went from relying solely on athleticism to knowing the situation,
+              understanding the mind-set of a pitcher, calculating my leads, improving my jumps and
+              SYSTEMATICALLY stealing bases. His system teaches runners to simply know when you do
+              or do not have the base stolen, as opposed to just outrunning the baseball. That type
+              of knowledge is a powerful offensive tool.&rdquo;
+            </p>
+            <footer>
+              <strong>Jason Ronai</strong><br />
+              Assistant Baseball Coach, United States Naval Academy,
+              and former player of Coach Roberts at UNC Asheville
+            </footer>
+          </blockquote>
         </div>
       </section>
     </>
