@@ -34,6 +34,15 @@
   margin-bottom: 16px;
 }
 
+.inlineLink {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.inlineLink:hover {
+  opacity: 0.7;
+}
+
 .welcomeButton {
   display: inline-block;
   margin-top: 8px;
