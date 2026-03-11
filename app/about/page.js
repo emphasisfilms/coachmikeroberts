@@ -12,7 +12,7 @@ export default function About() {
   return (
     <>
       <section className={styles.hero}>
-        <h1>A lifetime dedicated to the game of baseball and the development of young athletes.</h1>
+        <h1>A lifetime dedicated to the game of baseball and the development of young athletes</h1>
       </section>
 
       <section className={styles.bio}>

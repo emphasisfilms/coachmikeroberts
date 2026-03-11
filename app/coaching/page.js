@@ -12,7 +12,7 @@ export default function Coaching() {
   return (
     <>
       <section className={styles.hero}>
-        <h1>Proud to lead the Cotuit Kettleers in the Cape Cod Baseball League.</h1>
+        <h1>Proud to lead the Cotuit Kettleers in the Cape Cod Baseball League</h1>
       </section>
 
       <article className={styles.post}>
