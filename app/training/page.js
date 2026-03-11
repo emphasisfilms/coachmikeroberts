@@ -96,12 +96,12 @@ export default function Training() {
                 technique and situational decision-making.
               </p>
               <a
-                href="http://www.youtube.com/watch?v=QfZGtw71yhk"
+                href="https://www.amazon.com/Baserunning-Mike-Roberts/dp/1450432182/ref=sr_1_1?crid=2ELJK071ANKBP&dib=eyJ2IjoiMSJ9.7CjC-rAyqjKqyb67UjtsovTitFCW1KdVM1t819tshPk.sVoSGfGhfihLeUU77YArb0JZ6N4Ozs67T0hXEOvQx4k&dib_tag=se&keywords=mike+roberts+baserunning&qid=1773267443&sprefix=mike+roberts+baserunni%2Caps%2C196&sr=8-1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.cta}
               >
-                Watch John Madden Interview
+                Buy on Amazon
               </a>
             </div>
           </div>
