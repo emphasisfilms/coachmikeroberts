@@ -104,6 +104,13 @@ export default function Home() {
               </a>
             </div>
             <div className={styles.featuredCard}>
+              <Image
+                src="/images/abca-podcast.jpg"
+                alt="ABCA Calls from the Clubhouse Podcast"
+                width={500}
+                height={500}
+                className={styles.featuredCardImage}
+              />
               <p className={styles.featuredCardLabel}>Podcast</p>
               <h3 className={styles.featuredCardTitle}>ABCA Podcast Interview</h3>
               <p className={styles.featuredCardText}>
