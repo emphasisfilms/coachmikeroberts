@@ -141,13 +141,6 @@ export default function Coaching() {
           <h2>Cotuit Kettleers</h2>
           <p className={styles.postMeta}>Story by Steve McCarthy, August 13, 2010</p>
 
-          <Image
-            src="/images/kettleers-slide.jpg"
-            alt="Kettleers player sliding into base"
-            width={800}
-            height={600}
-            className={styles.postImage}
-          />
           <p>
             SOUTH YARMOUTH - Based on the attendance figures from Friday&rsquo;s deciding Game 3
             of the Cape Cod Baseball League Championship Series, it&rsquo;s pretty certain everyone
@@ -190,6 +183,13 @@ export default function Coaching() {
             this field,&rdquo; Roberts said. &ldquo;He could have easily not played the last five
             innings. He&rsquo;s a phenomenal young man and a fierce competitor.&rdquo;
           </p>
+          <Image
+            src="/images/kettleers-slide.jpg"
+            alt="Kettleers player sliding into base"
+            width={800}
+            height={600}
+            className={styles.postImage}
+          />
           <p>
             Tropeano started and finished the season on the mound for Cotuit and I&rsquo;ll admit I
             was one of the crowd that called him &ldquo;Hard-luck&rdquo; in the early going. The
