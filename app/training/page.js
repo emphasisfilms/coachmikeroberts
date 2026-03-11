@@ -11,7 +11,7 @@ export default function Training() {
   return (
     <>
       <section className={styles.hero}>
-        <h1>Training resources to help you master the fundamentals of baseball</h1>
+        <h1>Training resources to help you master the game of baseball</h1>
       </section>
 
       <section className={styles.vimeoSection}>
