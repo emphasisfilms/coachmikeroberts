@@ -8,7 +8,7 @@ import styles from './Header.module.css'
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/training', label: 'Training' },
+  { href: 'https://vimeo.com/ondemand/fundamentalsofbaseball', label: 'Training', external: true },
   { href: '/about', label: 'About' },
   { href: '/coaching', label: 'Coaching' },
   { href: '/contact', label: 'Contact' },
@@ -48,15 +48,28 @@ export default function Header() {
         </button>
 
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
-          {navLinks.map(({ href, label }) => (
-            <Link
-              key={href}
-              href={href}
-              className={`${styles.navLink} ${pathname === href ? styles.navLinkActive : ''}`}
-              onClick={() => setMenuOpen(false)}
-            >
-              {label}
-            </Link>
+          {navLinks.map(({ href, label, external }) => (
+            external ? (
+              <a
+                key={href}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.navLink}
+                onClick={() => setMenuOpen(false)}
+              >
+                {label}
+              </a>
+            ) : (
+              <Link
+                key={href}
+                href={href}
+                className={`${styles.navLink} ${pathname === href ? styles.navLinkActive : ''}`}
+                onClick={() => setMenuOpen(false)}
+              >
+                {label}
+              </Link>
+            )
           ))}
         </nav>
       </div>
