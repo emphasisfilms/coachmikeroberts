@@ -9,8 +9,8 @@ import styles from './Header.module.css'
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: 'https://vimeo.com/ondemand/fundamentalsofbaseball', label: 'Training', external: true },
   { href: '/coaching', label: 'Coaching' },
+  { href: 'https://vimeo.com/ondemand/fundamentalsofbaseball', label: 'Training', external: true },
   { href: '/contact', label: 'Contact' },
 ]
 
