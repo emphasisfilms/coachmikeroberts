@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <>
       <section className={styles.hero}>
-        <h1>Contact</h1>
+        <h1>Have a question or want to connect? I&rsquo;d love to hear from you</h1>
       </section>
 
       <section className={styles.content}>
