@@ -25,7 +25,13 @@ export default function Contact() {
             </div>
             <div className={styles.formGroup}>
               <label htmlFor="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="What is this regarding?" />
+              <select id="subject" name="subject" required>
+                <option value="General">General</option>
+                <option value="Speaking Request">Speaking Request</option>
+                <option value="Upcoming Event">Upcoming Event</option>
+                <option value="Videos">Videos</option>
+                <option value="Personal Note">Personal Note</option>
+              </select>
             </div>
             <div className={styles.formGroup}>
               <label htmlFor="message">Message</label>
