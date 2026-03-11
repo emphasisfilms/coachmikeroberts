@@ -103,8 +103,6 @@ export default function About() {
         </div>
       </section>
 
-      <FeaturedCards />
-
       <section className={styles.quotes}>
         <RotatingQuotes />
       </section>
@@ -131,6 +129,8 @@ export default function About() {
           </blockquote>
         </div>
       </section>
+
+      <FeaturedCards />
     </>
   )
 }
