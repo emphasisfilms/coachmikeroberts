@@ -1,9 +1,11 @@
-import Link from 'next/link'
+import Image from 'next/image'
+import FeaturedCards from '@/components/FeaturedCards'
+import RotatingQuotes from '@/components/RotatingQuotes'
 import styles from './page.module.css'
 
 export const metadata = {
   title: 'Coaching — Coach Mike Roberts',
-  description: 'Coach Mike Roberts\' coaching philosophy — fundamentals, self-motivation, and the "Playground or Backyard" approach to developing complete baseball players.',
+  description: 'Coaching news and stories from Coach Mike Roberts.',
 }
 
 export default function Coaching() {
@@ -11,147 +13,133 @@ export default function Coaching() {
     <>
       <section className={styles.hero}>
         <h1>Coaching</h1>
-        <p>
-          Building complete ballplayers through fundamentals, discipline, and a love for the game.
-        </p>
       </section>
 
-      <section className={styles.philosophy}>
-        <div className={styles.philosophyInner}>
-          <h2>The &ldquo;Playground or Backyard&rdquo; Philosophy</h2>
+      <article className={styles.post}>
+        <div className={styles.postInner}>
+          <h2>Cotuit Sweeps Mariners to Win Its 17th Cape League Title</h2>
+          <p className={styles.postMeta}>Story by Aria Gerson, August 9, 2019</p>
+
           <p>
-            Coach Roberts believes that the best baseball is played the way it was learned — in
-            backyards, on playgrounds, and in sandlots. Before the era of year-round travel ball
-            and specialization, young players developed their skills through unstructured play,
-            creativity, and a genuine love for the game.
+            COTUIT &ndash; Casey Schmitt was supposed to have thrown his last pitch of the summer.
           </p>
           <p>
-            This philosophy is at the heart of Coach Roberts&rsquo; approach. It&rsquo;s about
-            recapturing that joy and combining it with disciplined fundamentals. When players enjoy
-            what they&rsquo;re doing and feel confident in their abilities, they perform at their
-            best — and they stick with the game for life.
+            In a four-inning effort against Wareham last Sunday, the Cotuit right-hander hit his
+            innings limit. Usually, those are strict, and usually, once hit, the players don&rsquo;t
+            throw another pitch.
           </p>
           <p>
-            The result is a program that produces not just better players, but better competitors,
-            better teammates, and better people. It&rsquo;s an approach that worked at every level
-            Coach Roberts coached — from youth leagues to the College World Series.
+            But Mike Roberts had other plans.
           </p>
+          <Image
+            src="/images/kettleers-mound.jpg"
+            alt="Cotuit Kettleers meeting on the mound at Lowell Park"
+            width={800}
+            height={533}
+            className={styles.postImage}
+          />
+          <p>
+            The Cotuit manager called Schmitt&rsquo;s college coaches at San Diego State and asked
+            if Schmitt could have one more inning. He had a particular inning in mind: the ninth
+            inning of the championship game, throwing the pitch that would clinch a Cape Cod Baseball
+            League championship &mdash; the 17th in Cotuit team history since 1961.
+          </p>
+          <p>
+            Schmitt&rsquo;s coaches said yes. So on Friday at Lowell Park, a title almost in hand,
+            Schmitt got the ball.
+          </p>
+          <p>
+            And there, on the mound, Schmitt did exactly what Roberts had envisioned last week:
+            threw the last pitch of a championship, as the Kettleers got the sweep with a 10-3 win.
+          </p>
+          <p>
+            As if that weren&rsquo;t enough, Schmitt also hit two home runs as the starting third
+            baseman, securing playoff MVP honors.
+          </p>
+          <p>
+            In the first inning, a cheer of &ldquo;Holy Schmitt!&rdquo; rang out as Schmitt watched
+            his fly ball leave the yard. His teammates poured out of the dugout to give him high
+            fives. It was already the second time they&rsquo;d done so that inning, as first baseman
+            Matt Mervis (Duke) went deep two batters earlier. Schmitt would go yard again in the
+            fourth to put Cotuit up, 3-0.
+          </p>
+          <p>
+            &ldquo;Things fell into place, and it didn&rsquo;t surprise me that Casey hit two home
+            runs today,&rdquo; Roberts said. &ldquo;I&rsquo;m so thrilled for Casey. I&rsquo;m
+            thrilled that he was able to push us out to 3-0 with another home run, and then the
+            whole team kind of chipped in.&rdquo;
+          </p>
+          <p>
+            The Mariners&rsquo; starter, right-hander Connor McCullough (Kansas State), had a 1.05
+            ERA in the regular season and tossed five scoreless innings in his last start against
+            Cotuit. But all that was soon forgotten. In the fourth, Schmitt hit his second long ball
+            of the night and an error, single, walk and another single put the Kettleers up by four.
+          </p>
+          <p>
+            That would be McCullough&rsquo;s last inning.
+          </p>
+          <p>
+            Harwich caught the home run bug in the fifth when third baseman Riley Tirotta (Dayton)
+            and first baseman Niko Kavadas (Notre Dame) both went deep to bring it to 4-2, but it
+            was a mere reprieve before the wheels fell off.
+          </p>
+          <p>
+            Eleven batters came to the plate and six got hits for the Kettleers in the fifth, with
+            a hit batter, walk, sacrifice fly and passed ball pitching in to score six runs. Mervis
+            singled twice in the inning, scoring a run and driving in another. He finished 4-for-5
+            with two RBIs.
+          </p>
+          <p>
+            &ldquo;That was definitely a momentum-booster,&rdquo; Schmitt said. &ldquo;So that was
+            fun.&rdquo;
+          </p>
+          <p>
+            Tirotta doubled in the seventh and scored on a single, finishing 2-for-3 as one of the
+            Mariners&rsquo; few bright spots. But the extra run was far too little, far too late.
+          </p>
+          <p>
+            All season, Harwich had been a team that had lockdown pitching, featuring multiple
+            rotation studs and a stalwart bullpen. But the Mariners couldn&rsquo;t come through in
+            the championship series.
+          </p>
+          <p>
+            &ldquo;When you&rsquo;re going to [Cotuit&rsquo;s] park ... obviously they pack this
+            place and they&rsquo;re one of the crazier fanbases,&rdquo; said Harwich designated
+            hitter Patrick Winkel (UConn), who hit two home runs in Thursday&rsquo;s 7-6 loss to
+            Cotuit in Game 1 that lasted 15 innings. &ldquo;So you have that in the back of your
+            head, but outside of that, we came, we knew they would be tough to beat, they&rsquo;re
+            coming off of a big win, especially that 15 innings. That&rsquo;s a dream win for any
+            team. Coming off of that, you have all the momentum.&rdquo;
+          </p>
+          <p>
+            Schmitt took the mound to close it out, a little amped at first. He walked Tirotta and
+            ran a 3-0 count on catcher Sean Harrington before coming back to strike him out.
+          </p>
+          <p>
+            The next batter, outfielder Max Marusak, hit a looping line drive, but shortstop Adam
+            Oviedo leapt up and caught it and tagged Tirotta for the double play.
+          </p>
+          <p>
+            In the blink of an eye, he was being hounded as the Kettleers piled on one another on
+            the mound, throwing their hats everywhere, coming together as a team one last time as
+            they received the championship trophy.
+          </p>
+          <Image
+            src="/images/kettleers-trophy.jpg"
+            alt="Cotuit Kettleers celebrating with the championship trophy"
+            width={800}
+            height={533}
+            className={styles.postImage}
+          />
         </div>
-      </section>
+      </article>
 
-      <section className={styles.principles}>
-        <div className={styles.principlesInner}>
-          <h2>Key Principles</h2>
-          <div className={styles.principlesGrid}>
-            <div className={styles.principleCard}>
-              <div className={styles.principleNumber}>01</div>
-              <h3>Master the Fundamentals</h3>
-              <p>
-                Every advanced skill is built on a foundation of basics. Catching, throwing, fielding,
-                and baserunning — these are the building blocks that never go out of style. A player
-                who excels at fundamentals will always find success.
-              </p>
-            </div>
-            <div className={styles.principleCard}>
-              <div className={styles.principleNumber}>02</div>
-              <h3>Individual Practice</h3>
-              <p>
-                Team practice is important, but individual practice is where real improvement happens.
-                Players are encouraged to put in time on their own — working on weaknesses, refining
-                strengths, and developing at their own pace.
-              </p>
-            </div>
-            <div className={styles.principleCard}>
-              <div className={styles.principleNumber}>03</div>
-              <h3>Self-Motivation</h3>
-              <p>
-                The best players don&rsquo;t need to be pushed — they push themselves. Coach Roberts
-                teaches players to develop an internal drive that goes beyond external rewards. This
-                mindset serves them well beyond baseball.
-              </p>
-            </div>
-            <div className={styles.principleCard}>
-              <div className={styles.principleNumber}>04</div>
-              <h3>Compete Every Day</h3>
-              <p>
-                Competition isn&rsquo;t just for game day. A competitive attitude in practice, in the
-                weight room, and in the classroom creates habits that carry over when the lights come on.
-              </p>
-            </div>
-            <div className={styles.principleCard}>
-              <div className={styles.principleNumber}>05</div>
-              <h3>Respect the Game</h3>
-              <p>
-                Play hard, play fair, and respect your opponents, your teammates, and the umpires.
-                The way you carry yourself on the field says everything about who you are as a person.
-              </p>
-            </div>
-            <div className={styles.principleCard}>
-              <div className={styles.principleNumber}>06</div>
-              <h3>Have Fun</h3>
-              <p>
-                At the end of the day, baseball is a game. If you&rsquo;re not enjoying it, something
-                is wrong. The best performances come from players who are loose, confident, and having
-                a great time.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className={styles.divider} />
 
-      <section className={styles.approach}>
-        <div className={styles.approachInner}>
-          <div className={styles.approachContent}>
-            <h2>Work With Coach Roberts</h2>
-            <p>
-              Whether you&rsquo;re a young player looking to develop your skills, a high school
-              athlete preparing for the next level, or a coach seeking to improve your program,
-              Coach Roberts brings decades of experience and a proven track record of success.
-            </p>
-            <p>
-              His instructional videos, books, and personal coaching sessions offer access to the
-              same methods and philosophies that built one of the top programs in college baseball.
-            </p>
-            <Link href="/contact" className={styles.approachCta}>
-              Get in Touch
-            </Link>
-          </div>
-          <div className={styles.approachImage}>
-            Coaching Session Photo
-          </div>
-        </div>
-      </section>
+      <FeaturedCards />
 
-      <section className={styles.testimonials}>
-        <div className={styles.testimonialsInner}>
-          <h2>What People Say</h2>
-          <div className={styles.testimonialsGrid}>
-            <div className={styles.testimonialCard}>
-              <p className={styles.testimonialQuote}>
-                &ldquo;Coach Roberts taught me more than just baseball. The fundamentals and work
-                ethic he instilled have stayed with me throughout my entire career and life.&rdquo;
-              </p>
-              <p className={styles.testimonialAuthor}>Former Player</p>
-              <p className={styles.testimonialRole}>UNC Baseball Alumni</p>
-            </div>
-            <div className={styles.testimonialCard}>
-              <p className={styles.testimonialQuote}>
-                &ldquo;His approach to individual development is second to none. He sees what each
-                player needs and finds a way to bring out their best.&rdquo;
-              </p>
-              <p className={styles.testimonialAuthor}>Fellow Coach</p>
-              <p className={styles.testimonialRole}>ACC Baseball</p>
-            </div>
-            <div className={styles.testimonialCard}>
-              <p className={styles.testimonialQuote}>
-                &ldquo;The training videos are outstanding. Clear, practical instruction that you
-                can put to work immediately. Worth every minute.&rdquo;
-              </p>
-              <p className={styles.testimonialAuthor}>Youth Coach</p>
-              <p className={styles.testimonialRole}>Vimeo On Demand Viewer</p>
-            </div>
-          </div>
-        </div>
+      <section className={styles.quotes}>
+        <RotatingQuotes />
       </section>
     </>
   )
