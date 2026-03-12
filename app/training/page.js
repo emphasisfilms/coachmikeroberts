@@ -14,38 +14,6 @@ export default function Training() {
         <h1>Training resources to help you master the game of baseball</h1>
       </section>
 
-      <section className={styles.vimeoSection}>
-        <div className={styles.sectionInner}>
-          <div className={styles.videoEmbed}>
-            <iframe
-              src="https://player.vimeo.com/video/167310017"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              title="Fundamentals of Baseball Trailer"
-            />
-          </div>
-          <h2>Fundamentals of Baseball</h2>
-          <p>
-            My comprehensive video training series is available on Vimeo On Demand. These
-            instructional videos cover the core fundamentals that every player needs to
-            master — from proper throwing mechanics and fielding techniques to baserunning
-            and situational awareness.
-          </p>
-          <a
-            href="https://vimeo.com/ondemand/fundamentalsofbaseball"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.cta}
-          >
-            Watch on Vimeo On Demand
-          </a>
-        </div>
-      </section>
-
-      <section className={styles.quotes}>
-        <RotatingQuotes />
-      </section>
-
       <section className={styles.bookSection}>
         <div className={styles.sectionInner}>
           <div className={styles.bookCard}>
@@ -105,6 +73,38 @@ export default function Training() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className={styles.quotes}>
+        <RotatingQuotes />
+      </section>
+
+      <section className={styles.vimeoSection}>
+        <div className={styles.sectionInner}>
+          <div className={styles.videoEmbed}>
+            <iframe
+              src="https://player.vimeo.com/video/167310017"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              title="Fundamentals of Baseball Trailer"
+            />
+          </div>
+          <h2>Fundamentals of Baseball</h2>
+          <p>
+            My comprehensive video training series is available on Vimeo On Demand. These
+            instructional videos cover the core fundamentals that every player needs to
+            master — from proper throwing mechanics and fielding techniques to baserunning
+            and situational awareness.
+          </p>
+          <a
+            href="https://vimeo.com/ondemand/fundamentalsofbaseball"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.cta}
+          >
+            Watch on Vimeo On Demand
+          </a>
         </div>
       </section>
     </>
